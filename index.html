@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediMonitor Pro - Advanced IoT Healthcare Monitoring</title>
+    <!-- ВОТ ТУТ ССЫЛКА НА CSS ФАЙЛ -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>⚕️</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <h1 class="logo">
+                        <span class="logo-icon">⚕️</span>
+                        <span>MediMonitor</span>
+                        <span class="badge">PRO</span>
+                    </h1>
+                </div>
+                <nav class="nav-menu">
+                    <a href="#dashboard" class="nav-link">
+                        <span class="nav-icon">📊</span> Dashboard
+                    </a> 
+                    <a href="#sensors" class="nav-link">
+                        <span class="nav-icon">🔌</span> Sensors
+                    </a>
+                    <a href="#alerts" class="nav-link">
+                        <span class="nav-icon">🔔</span> Alerts
+                    </a>
+                    <a href="#info" class="nav-link">
+                        <span class="nav-icon">👤</span> Patient Info
+                    </a>
+                    <a href="#contact" class="nav-link">
+                        <span class="nav-icon">📞</span> Contact
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="introduction">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>Advanced IoT Healthcare Monitoring System</h2>
+                    <p class="intro-desc">MediMonitor Pro is the most sophisticated IoT-based healthcare platform designed for continuous monitoring of patients with metabolic syndrome. Our enterprise-grade system collects real-time health data from multiple wearable sensors and displays comprehensive health parameters through our intuitive AI-powered dashboard.</p>
+                    <div class="intro-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">⚡</span>
+                            <span>Real-time Monitoring</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🔒</span>
+                            <span>Military-Grade Security</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📡</span>
+                            <span>Cloud Connected</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🤖</span>
+                            <span>AI-Powered Analytics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-visual">
+                    <div class="hologram-device">
+                        <div class="device-screen">
+                            <div class="pulse-dot"></div>
+                            <div class="wave-animation"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Dashboard -->
+    <section id="dashboard" class="patient-dashboard">
+        <div class="container">
+            <div class="section-header">
+                <h2>Patient Health Dashboard</h2>
+                <p class="section-subtitle">Real-time monitoring of vital signs and health metrics</p>
+            </div>
+            <div class="dashboard-grid">
+                <!-- Body Temperature -->
+                <div class="parameter-card">
+                    <div class="card-glow"></div>
+                    <div class="param-icon">🌡️</div>
+                    <div class="param-header">
+                        <h3>Body Temperature</h3>
+                        <span class="status-badge status-normal">
+                            <span class="pulse-badge"></span>Normal
+                        </span>
+                    </div>
+                    <div class="param-value">37.2°C</div>
+                    <div class="param-range">Normal range: 36.1 - 37.2°C</div>
+                    <div class="param-bar">
+                        <div class="bar-fill" style="width: 52%;"></div>
+                    </div>
+                    <div class="param-footer">Last update: 2 min ago</div>
+                </div>
+
+                <!-- Blood Glucose -->
+                <div class="parameter-card">
+                    <div class="card-glow"></div>
+                    <div class="param-icon">🩸</div>
+                    <div class="param-header">
+                        <h3>Blood Glucose</h3>
+                        <span class="status-badge status-warning">
+                            <span class="pulse-badge"></span>Caution
+                        </span>
+                    </div>
+                    <div class="param-value">145 mg/dL</div>
+                    <div class="param-range">Normal fasting: 70 - 100 mg/dL</div>
+                    <div class="param-bar">
+                        <div class="bar-fill bar-warning" style="width: 75%;"></div>
+                    </div>
+                    <div class="param-footer">Slightly elevated • Monitor diet</div>
+                </div>
+
+                <!-- Heart Rate -->
+                <div class="parameter-card">
+                    <div class="card-glow"></div>
+                    <div class="param-icon">❤️</div>
+                    <div class="param-header">
+                        <h3>Heart Rate</h3>
+                        <span class="status-badge status-normal">
+                            <span class="pulse-badge"></span>Normal
+                        </span>
+                    </div>
+                    <div class="param-value">72 <span class="unit">bpm</span></div>
+                    <div class="param-range">Normal range: 60 - 100 bpm</div>
+                    <div class="param-bar">
+                        <div class="bar-fill" style="width: 55%;"></div>
+                    </div>
+                    <div class="param-footer">Steady rhythm detected</div>
+                </div>
+
+                <!-- Blood Pressure -->
+                <div class="parameter-card">
+                    <div class="card-glow"></div>
+                    <div class="param-icon">📊</div>
+                    <div class="param-header">
+                        <h3>Blood Pressure</h3>
+                        <span class="status-badge status-warning">
+                            <span class="pulse-badge"></span>Elevated
+                        </span>
+                    </div>
+                    <div class="param-value">138/85 <span class="unit">mmHg</span></div>
+                    <div class="param-range">Normal: < 120/80 mmHg</div>
+                    <div class="param-bar">
+                        <div class="bar-fill bar-warning" style="width: 70%;"></div>
+                    </div>
+                    <div class="param-footer">Slightly elevated • Consult doctor</div>
+                </div>
+
+                <!-- ECG -->
+                <div class="parameter-card">
+                    <div class="card-glow"></div>
+                    <div class="param-icon">📈</div>
+                    <div class="param-header">
+                        <h3>ECG Status</h3>
+                        <span class="status-badge status-normal">
+                            <span class="pulse-badge"></span>Normal
+                        </span>
+                    </div>
+                    <div class="param-value">Regular Rhythm</div>
+                    <div class="param-range">Last reading: 2 minutes ago</div>
+                    <div class="ecg-wave">
+                        <svg viewBox="0 0 100 30" preserveAspectRatio="none">
+                            <polyline points="0,15 5,15 10,12 15,18 20,15 25,15 30,13 35,17 40,15 45,15 50,14 55,16 60,15 65,15 70,12 75,18 80,15 85,15 90,13 95,17 100,15" 
+                                      fill="none" stroke="#27AE60" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Oxygen Saturation -->
+                <div class="parameter-card">
+                    <div class="card-glow"></div>
+                    <div class="param-icon">💨</div>
+                    <div class="param-header">
+                        <h3>Oxygen Saturation</h3>
+                        <span class="status-badge status-normal">
+                            <span class="pulse-badge"></span>Normal
+                        </span>
+                    </div>
+                    <div class="param-value">98%</div>
+                    <div class="param-range">Normal range: 95 - 100%</div>
+                    <div class="param-bar">
+                        <div class="bar-fill" style="width: 98%;"></div>
+                    </div>
+                    <div class="param-footer">Excellent oxygen levels</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sensor Cards Section -->
+    <section id="sensors" class="sensor-cards">
+        <div class="container">
+            <div class="section-header">
+                <h2>Active Sensors Network</h2>
+                <p class="section-subtitle">6 wireless sensors monitoring in real-time</p>
+            </div>
+            <div class="sensors-grid">
+                <!-- Temperature Sensor -->
+                <div class="sensor-card premium-sensor">
+                    <div class="card-glow"></div>
+                    <div class="sensor-top">
+                        <div class="sensor-icon">🌡️</div>
+                        <div class="sensor-status">
+                            <span class="status-dot"></span>
+                            <span>ACTIVE</span>
+                        </div>
+                    </div>
+                    <h3>Temperature Sensor</h3>
+                    <div class="sensor-detail">
+                        <span class="label">Current Value</span>
+                        <span class="value">37.2°C</span>
+                    </div>
+                    <div class="sensor-detail">
+                        <span class="label">Unit</span>
+                        <span class="value">Celsius</span>
+                    </div>
+                    <div class="sensor-detail">
+                        <span class="label">Accuracy</span>
+                        <span class="value">±0.1°C</span>
+                    </div>
+                    <div class="sensor-detail">
+                        <span class="label">Battery</span>
+                        <span class="value">92%</span>
+                    </div>
+                    <button class="sensor-btn">View Trends</button>
+                </div>
+
+                <!-- Glucose Sensor -->
+                <div class="sensor-card premium-sensor">
+                    <div class="card-glow"></div>
+                    <div class="sensor-top">
+                        <div class="sensor-icon">🩸</div>
+                        <div class="sensor-status">
+                            <span class="status-dot"></span>
+                            <span>ACTIVE</span>
+                        </div>
+                    </div>
+                    <h3>Glucose Monitor</h3>
+                    <div class="sensor-detail">
+                        <span class="label">Current Value</span>
+                        <span class="value">145 mg/dL</span>
+                    </div>
+                    <div class="sensor-detail">
+                        <span class="label">Unit</span>
+                        <span class="value">mg/dL</span>
+                    </div>
+                    <div class="sensor-detail">
+                        <span class="label">Trend</span>
+                        <span class="value warning">↑ Rising</span>
+                    </div>
+                    <div class="sensor-detail">
+                        <span class="label">Battery</span>
+                        <span class="value">87%</span>
+                    </div>
+                    <button class="sensor-btn">View Trends</button>
+                </div>
+
+                <!-- Heart Rate Sensor -->
+                <div class="sensor-card premium-sensor">
+                    <div class="card-glow"></div>
+                    <div class="sensor-top">
+                        <div class="sensor-icon">❤️</div>
+                        <div class="sensor-status">
+                            <span class="status-dot"></span>
+                            <span>ACTIVE</span>
+                        </div>
+                    </div>
+                    <h3>Heart Rate Monitor</h3>
+                    <div class="sensor-detail">
+                        <span class="label">Current Value</span>
+                        <span class="value">72 bpm</span>
+                    </div>
+                    <div class="sensor-detail">
+                        <span class="label">Unit</span>
+                        <span class="value">Beats/min</span>
+                    </div>
+                    <div class="sensor-detail">
+                        <span class="label">Rhythm</span>
+                        <span class="value">Regular</span>
+                    </div>
+                    <div class="sensor-detail">
+                        <span class="label">Battery</span>
+                        <span class="value">95%</span>
+                    </div>
+                    <button class="sensor-btn">View Trends</button>
+                </div>
+
+                <!-- Blood Pressure Sensor -->
+                <div class="sensor-card premium-sensor">
+                    <div class="card-glow"></div>
+                    <div class="sensor-top">
+                        <div class="sensor-icon">📊</div>
+                        <div class="sensor-status">
+                            <span class="status-dot"></span>
+                            <span>ACTIVE</span>
+                        </div>
+                    </div>
+                    <h3>Blood Pressure Monitor</h3>
+                    <div class="sensor-detail">
+                        <span class="label">Current Value</span>
+                        <span class="value">138/85 mmHg</span>
+                    </div>
+                    <div class="sensor-detail">
+                        <span class="label">Unit</span>
+                        <span class="value">mmHg</span>
+                    </div>
+                    <div class="sensor-detail">
+                        <span class="label">Classification</span>
+                        <span class="value warning">Stage 1</span>
+                    </div>
+                    <div class="sensor-detail">
+                        <span class="label">Battery</span>
+                        <span class="value">89%</span>
+                    </div>
+                    <button class="sensor-btn">View Trends</button>
+                </div>
+
+                <!-- ECG Sensor -->
+                <div class="sensor-card premium-sensor">
+                    <div class="card-glow"></div>
+                    <div class="sensor-top">
+                        <div class="sensor-icon">📈</div>
+                        <div class="sensor-status">
+                            <span class="status-dot"></span>
+                            <span>ACTIVE</span>
+                        </div>
+                    </div>
+                    <h3>ECG Sensor</h3>
+                    <div class="sensor-detail">
+                        <span class="label">Rhythm</span>
+                        <span class="value">Regular</span>
+                    </div>
+                    <div class="sensor-detail">
+                        <span class="label">Heart Rate</span>
+                        <span class="value">72 bpm</span>
+                    </div>
+                    <div class="sensor-detail">
+                        <span class="label">Intervals</span>
+                        <span class="value">Normal</span>
+                    </div>
+                    <div class="sensor-detail">
+                        <span class="label">Battery</span>
+                        <span class="value">91%</span>
+                    </div>
+                    <button class="sensor-btn">View Trends</button>
+                </div>
+
+                <!-- Oxygen Saturation Sensor -->
+                <div class="sensor-card premium-sensor">
+                    <div class="card-glow"></div>
+                    <div class="sensor-top">
+                        <div class="sensor-icon">💨</div>
+                        <div class="sensor-status">
+                            <span class="status-dot"></span>
+                            <span>ACTIVE</span>
+                        </div>
+                    </div>
+                    <h3>SpO2 Monitor</h3>
+                    <div class="sensor-detail">
+                        <span class="label">Current Value</span>
+                        <span class="value">98%</span>
+                    </div>
+                    <div class="sensor-detail">
+                        <span class="label">Unit</span>
+                        <span class="value">Percentage</span>
+                    </div>
+                    <div class="sensor-detail">
+                        <span class="label">Status</span>
+                        <span class="value">Excellent</span>
+                    </div>
+                    <div class="sensor-detail">
+                        <span class="label">Battery</span>
+                        <span class="value">94%</span>
+                    </div>
+                    <button class="sensor-btn">View Trends</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Information Section -->
+    <section id="info" class="patient-info">
+        <div class="container">
+            <div class="section-header">
+                <h2>Patient Profile & Status</h2>
+                <p class="section-subtitle">Complete patient information and system monitoring</p>
+            </div>
+            <div class="info-grid">
+                <!-- Patient Data -->
+                <div class="info-card premium-card">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <h3>👤 Patient Information</h3>
+                    </div>
+                    <table class="info-table">
+                        <tr>
+                            <td class="label">Patient ID</td>
+                            <td class="value">MED-2026-001847</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Full Name</td>
+                            <td class="value">John Anderson</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Date of Birth</td>
+                            <td class="value">June 15, 1966</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Age</td>
+                            <td class="value">58 years</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Gender</td>
+                            <td class="value">Male</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Primary Condition</td>
+                            <td class="value">Metabolic Syndrome</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Blood Type</td>
+                            <td class="value">O+</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Enrollment Date</td>
+                            <td class="value">January 12, 2026</td>
+                        </tr>
+                        <tr>
+                            <td class="label">Last Assessment</td>
+                            <td class="value">2 minutes ago</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Monitoring Status -->
+                <div class="info-card premium-card">
+                    <div class="card-glow"></div>
+                    <div class="card-header">
+                        <h3>🔌 System Status</h3>
+                    </div>
+                    <div class="status-group">
+                        <div class="status-item">
+                            <span class="status-label">Device Connection</span>
+                            <span class="status-indicator online">
+                                <span class="blink-dot"></span>Connected
+                            </span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Data Transmission</span>
+                            <span class="status-indicator online">
+                                <span class="blink-dot"></span>Streaming
+                            </span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Alert System</span>
+                            <span class="status-indicator online">
+                                <span class="blink-dot"></span>Armed
+                            </span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Cloud Sync</span>
+                            <span class="status-indicator online">
+                                <span class="blink-dot"></span>Synchronized
+                            </span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Overall Battery</span>
+                            <span class="status-indicator">🔋 92%</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Monitoring Mode</span>
+                            <span class="status-indicator">⏱️ 24/7 Active</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alert Section -->
+    <section id="alerts" class="alert-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>System Notifications & Alerts</h2>
+                <p class="section-subtitle">5 recent alerts and system notifications</p>
+            </div>
+            <div class="alerts-container">
+                <!-- Success Alert -->
+                <div class="alert alert-success">
+                    <div class="alert-icon">✓</div>
+                    <div class="alert-content">
+                        <div class="alert-header">
+                            <h4>Data Sync Successful</h4>
+                            <span class="alert-time">Today, 14:45</span>
+                        </div>
+                        <p>All health parameters have been successfully synchronized with cloud storage. Automatic backup completed with 100% integrity verification.</p>
+                    </div>
+                </div>
+
+                <!-- Warning Alert - High Blood Glucose -->
+                <div class="alert alert-warning">
+                    <div class="alert-icon">⚠️</div>
+                    <div class="alert-content">
+                        <div class="alert-header">
+                            <h4>Elevated Blood Glucose Level</h4>
+                            <span class="alert-time">Today, 14:15</span>
+                        </div>
+                        <p><strong>Reading: 145 mg/dL</strong> - Current level exceeds normal fasting range (70-100 mg/dL). Recommend dietary review, hydration, and increased monitoring frequency.</p>
+                    </div>
+                </div>
+
+                <!-- Warning Alert - High Blood Pressure -->
+                <div class="alert alert-warning">
+                    <div class="alert-icon">⚠️</div>
+                    <div class="alert-content">
+                        <div class="alert-header">
+                            <h4>Elevated Blood Pressure Detected</h4>
+                            <span class="alert-time">Today, 14:08</span>
+                        </div>
+                        <p><strong>Reading: 138/85 mmHg</strong> - Slightly elevated from normal range. Stage 1 Hypertension detected. Continue monitoring closely.</p>
+                    </div>
+                </div>
+
+                <!-- Info Alert -->
+                <div class="alert alert-info">
+                    <div class="alert-icon">ℹ️</div>
+                    <div class="alert-content">
+                        <div class="alert-header">
+                            <h4>Scheduled System Maintenance</h4>
+                            <span class="alert-time">Today, 13:52</span>
+                        </div>
+                        <p>Routine system diagnostics completed successfully. All sensors functioning optimally. No issues detected.</p>
+                    </div>
+                </div>
+
+                <!-- Critical Alert Example -->
+                <div class="alert alert-critical">
+                    <div class="alert-icon">🚨</div>
+                    <div class="alert-content">
+                        <div class="alert-header">
+                            <h4>Critical Alert Example</h4>
+                            <span class="alert-time">Not Currently Active</span>
+                        </div>
+                        <p><strong>Abnormal Heart Rate:</strong> If heart rate drops below 50 bpm or exceeds 120 bpm at rest, immediate medical attention would be required.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>⚕️ MediMonitor Pro</h4>
+                    <p>Enterprise-grade IoT healthcare monitoring platform for advanced patient care and metabolic syndrome management.</p>
+                    <div class="footer-badge">
+                        <span class="badge-item">✓ ISO 13485 Certified</span>
+                        <span class="badge-item">✓ HIPAA Compliant</span>
+                        <span class="badge-item">✓ FDA Approved</span>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>📞 Contact & Support</h4>
+                    <ul>
+                        <li><strong>📧 Email:</strong> support@medimonitor.io</li>
+                        <li><strong>☎️ Phone:</strong> +1 (555) 123-4567</li>
+                        <li><strong>🌐 Website:</strong> www.medimonitor.io</li>
+                        <li><strong>📍 HQ:</strong> Medical Tech Center</li>
+                        <li><strong>⏰ Support:</strong> 24/7</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>🔗 Quick Links</h4>
+                    <ul>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                        <li><a href="#" class="footer-link">Documentation</a></li>
+                        <li><a href="#" class="footer-link">User Guide</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>🏥 Company</h4>
+                    <ul>
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">Careers</a></li>
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                        <li><a href="#" class="footer-link">Research</a></li>
+                        <li><a href="#" class="footer-link">Partners</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MediMonitor Pro. All rights reserved. | With <span class="heart">❤️</span> for healthcare</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Button interactions
+        document.querySelectorAll('.sensor-btn, .alert-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                alert('Action executed successfully!');
+            });
+        });
+    </script>
+</body>
+</html>
